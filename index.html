@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Elegant Subscribe Newsletter Modal Form</title>
+    <link rel="stylesheet" href="./styling/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="modal-dialog modal-newsletter">
+      <div class="modal-content">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="modal-header">
+            <div class="icon-box">
+              <i class="material-icons">&#xE151;</i>
+            </div>
+          </div>
+          <div class="modal-body text-center">
+            <h4>Subscribe</h4>
+            <p>
+              Subscribe to my newsletter to receive the latest updates about up
+              and coming plans and projects
+            </p>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+              <input type="submit" class="btn btn-primary" value="Subscribe" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
